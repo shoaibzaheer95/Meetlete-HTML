@@ -43,6 +43,8 @@ img{
 }
 .top-bar .logo {
     float: left;
+    z-index: 99;
+    position: relative;
 }
 .top-bar .topnavbar {
     float: right;
@@ -725,10 +727,13 @@ h4.panel-title::after{
 }
 
 nav.mynav ul.navbar-nav{margin: 0;}
-nav.mynav ul.navbar-nav li a {
+nav.mynav ul.navbar-nav li a,nav.mynav ul.navbar-nav li a:hover {
     color: #000;
     font-size: 20px;
     padding: 20px 30px;
+}
+nav.mynav ul.navbar-nav li a:hover{
+    opacity: 0.6;
 }
 nav.mynav .navbar-collapse {
     padding: 0;
@@ -738,6 +743,10 @@ nav.mynav .navbar-collapse {
     box-shadow: 0px 10px 20px rgb(0 0 0 / 4%), 0px 2px 6px rgb(0 0 0 / 4%), 0px 0px 1px rgb(0 0 0 / 4%);
     border-radius: 0px 0px 45px 45px;
     padding-bottom: 30px;
+    border: none;
+    top: 66px;
+    left: auto;
+    right: auto;
 }
 
 nav.mynav.navbar-default .navbar-toggle .icon-bar {
@@ -750,8 +759,6 @@ nav.mynav.navbar-default .navbar-toggle .icon-bar {
 nav.mynav.navbar-default .navbar-toggle,nav.mynav.navbar-default .navbar-toggle:hover {
     border: none;
     background-color: transparent;
-    margin-top: 20px;
-    margin-right: 0;
 }
 nav.mynav.navbar-default button.navbar-toggle{
     width: 46px;
@@ -763,15 +770,20 @@ nav.mynav.navbar-default button.navbar-toggle{
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
+    background-size: 30px;
+     margin-top: 13px;
+    margin-right: 0;
 }
 nav.mynav.navbar-default button.navbar-toggle.collapsed{
     background-image: url(../images/hamb.png);
-    background-size: auto;
-       
+    background-size: 45px;     
 }
 nav.mynav.navbar-default button.navbar-toggle{
-     background-image: url(../images/close.png);
+     background-image: url(../images/closeit.png);
      background-size: 30px;
+}
+.footer-area ul {
+    padding-left: 0;
 }
 
 }
