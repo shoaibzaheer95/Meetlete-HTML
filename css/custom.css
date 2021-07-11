@@ -585,18 +585,7 @@ section.thanks {
 nav.mynav {
     margin: 0;
 }
-nav.mynav.navbar-default .navbar-toggle,nav.mynav.navbar-default .navbar-toggle:hover {
-    border: none;
-    background: none;
-    margin-top: 15px;
-    margin-right: 0;
-}
-nav.mynav.navbar-default .navbar-toggle .icon-bar {
-    background: linear-gradient(95.59deg, #36AF85 0%, #17A5B3 100%);
-    width: 46px;
-    height: 5px;
-    border-radius: 5px;
-}
+
 .hero-small {
     float: none;
     background-image: url(../images/mbt.png);
@@ -727,7 +716,59 @@ h4.panel-title::after{
 .for-mb{
     display: inline-block !important;
 }
+.top-bar .topnavbar {
+    float: none;
+}
 
+nav.mynav ul.navbar-nav{margin: 0;}
+nav.mynav ul.navbar-nav li a {
+    color: #000;
+    font-size: 20px;
+    padding: 20px 30px;
+}
+nav.mynav .navbar-collapse {
+    padding: 0;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0px 10px 20px rgb(0 0 0 / 4%), 0px 2px 6px rgb(0 0 0 / 4%), 0px 0px 1px rgb(0 0 0 / 4%);
+    border-radius: 0px 0px 45px 45px;
+    padding-bottom: 30px;
+}
+
+nav.mynav.navbar-default .navbar-toggle .icon-bar {
+    background: linear-gradient(95.59deg, #36AF85 0%, #17A5B3 100%);
+    width: 46px;
+    height: 5px;
+    border-radius: 5px;
+    display: none;
+}
+nav.mynav.navbar-default .navbar-toggle,nav.mynav.navbar-default .navbar-toggle:hover {
+    border: none;
+    background-color: transparent;
+    margin-top: 20px;
+    margin-right: 0;
+}
+nav.mynav.navbar-default button.navbar-toggle{
+    width: 46px;
+    height: 40px;
+     background-position-x: 0%;
+        background-position-y: 0%;
+        background-repeat: repeat;
+        background-size: container;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}
+nav.mynav.navbar-default button.navbar-toggle.collapsed{
+    background-image: url(../images/hamb.png);
+    background-size: auto;
+       
+}
+nav.mynav.navbar-default button.navbar-toggle{
+     background-image: url(../images/close.png);
+     background-size: 30px;
+}
 
 }
 
