@@ -404,6 +404,16 @@ h4.panel-title::after {
 section.news-area {
     padding-bottom: 0;
 }
+.video-here{
+    position: relative;
+}
+.playNews{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    text-align: center;
+}
 /*=========== Talent page =====================*/
 .formtalent {
     padding-top: 100px;
