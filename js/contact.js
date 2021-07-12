@@ -35,7 +35,7 @@ if (talentForm) {
     const formData = new FormData(talentForm);
     formData.append("type", "talent");
     fetch(scriptURL, { method: "POST", body: formData })
-    .then((response) => window.location.href = "talent-thanks.html")
+    .then((response) => window.location.href = "athletes-thanks.html")
       .catch((error) => console.error("Error!", error.message));
   });
 }

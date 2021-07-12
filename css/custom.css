@@ -225,6 +225,7 @@ body .meetbutton {
     background-repeat: no-repeat;
     background-position: 112% 0;
     background-size: 60%;
+    padding-bottom: 550px;
 }
 .about-thumb{
     display: none;
@@ -587,6 +588,18 @@ section.thanks {
 .footer-area ul li a:hover{
     opacity: 0.8;
 }
+/*======================================      term css     ===========================*/
+section.term-area.meetlete-section div.row{
+    max-width: 900px;
+}
+section.term-area.meetlete-section .container div * {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #4F4F4F;
+    margin-bottom: 20px;
+}
 
 /*======================================        Mobile responsive css     ===========================*/
 
@@ -646,6 +659,7 @@ nav.mynav {
 }
 .about-area {
     background: none;
+    padding-bottom: 50px;
 }
 .formtalent {
     padding-top: 30px;
