@@ -5,7 +5,17 @@ const scriptURL =
 const fanForm = document.forms["fan-contact-form"];
 
 if (fanForm) {
+  $('input').blur(function()
+    {
+      if( !$(this).val() ) {
+            $(this).addClass('warning');
+      }
+      else{
+        $(this).removeClass('warning');
+      }
+  });
   fanForm.addEventListener("submit", (e) => {
+    
     e.preventDefault();
     const formData = new FormData(fanForm);
     formData.append("type", "fan");
@@ -17,7 +27,17 @@ if (fanForm) {
 const contestForm = document.forms["contest-contact-form"];
 
 if (contestForm) {
+  $('input').blur(function()
+    {
+      if( !$(this).val() ) {
+            $(this).addClass('warning');
+      }
+      else{
+        $(this).removeClass('warning');
+      }
+  });
   contestForm.addEventListener("submit", (e) => {
+
     e.preventDefault();
     const formData = new FormData(contestForm);
     formData.append("type", "contest");
@@ -30,6 +50,16 @@ if (contestForm) {
 const talentForm = document.forms["talent-contact-form"];
 
 if (talentForm) {
+  $('input').blur(function()
+    {
+      if( !$(this).val() ) {
+            $(this).addClass('warning');
+      }
+      else{
+        $(this).removeClass('warning');
+      }
+  });
+
   talentForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const formData = new FormData(talentForm);

@@ -440,6 +440,9 @@ section.news-area {
     padding: 30px;
     margin-bottom: 20px;
 }
+.formtalent form input.warning{
+    border-color:red;
+}
 .formtalent form input[type="submit"]{
     width: 354px;
     height: 76px;
