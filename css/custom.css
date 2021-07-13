@@ -812,6 +812,9 @@ nav.mynav.navbar-default button.navbar-toggle{
 .footer-area ul {
     padding-left: 0;
 }
+.footer-area ul li{
+    width: 48%
+}
 
 }
 
@@ -821,5 +824,7 @@ nav.mynav.navbar-default button.navbar-toggle{
         background-position: 0px -170px;
     }
 
-
+    .footer-area ul li{
+        width: 100%
+    }
 }
