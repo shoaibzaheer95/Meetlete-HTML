@@ -199,16 +199,6 @@ video#jeohome {
     z-index: -1;
     border-radius: 50px;
 }
-.yellowpatt {
-    height:100%;
-    width: 100%;
-    position: absolute;
-    display: inline-block;
-    background-image: url(../images/yellowround.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
 .yellowpatt {
     height: 280px;
