@@ -448,10 +448,10 @@ h4.panel-title::after {
     text-align: left;
 }
 /*=========== News area =====================*/
-.news-content h2{
+.news-content h2,.newsM-content h2{
     margin-bottom: 30px;
 }
-.news-content p{
+.news-content p,.newsM-content p{
     margin-top: 0;
     margin-bottom: 0;
     font-size:18px;
@@ -462,7 +462,7 @@ h4.panel-title::after {
     text-align: left;
 }
 .news-content {
-    padding-top: 150px;
+    padding-top:0px;
     margin-left: 100px;
 }
 section.news-area {
@@ -477,6 +477,9 @@ section.news-area {
     left: 0;
     top: 50%;
     text-align: center;
+}
+section.newsM-area4 {
+    padding-bottom: 0;
 }
 /*=========== Talent page =====================*/
 .formtalent {
