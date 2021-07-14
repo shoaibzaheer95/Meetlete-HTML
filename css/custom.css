@@ -199,7 +199,32 @@ video#jeohome {
     z-index: -1;
     border-radius: 50px;
 }
+.namecaller {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+}
 
+.namecaller p{
+    font-size: 16px;
+    color: #fff;
+    text-shadow: 0 0 4px #000;
+    margin: 0;
+}
+button#vidbutton {
+    background: -webkit-linear-gradient(#36AF85, #17A5B3);
+    color: #fff;
+    border: none;
+    width: 60px;
+    height: 60px;
+    letter-spacing: 1px;
+    line-height: normal;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 400;
+    border-radius: 100%;
+}
 .yellowpatt {
     height: 280px;
     width: 280px;

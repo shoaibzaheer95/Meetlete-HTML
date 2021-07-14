@@ -85,11 +85,16 @@
 						<div class="yellowpatt"></div>
 						<div class="dotpatt"></div>
 						<div class="inner-video">
+							<div class="namecaller">
+								<p>Joe Buck is calling</p>
+								<button id="vidbutton">Pause</button> 
+							</div>
 							<div class="frameiphn"></div>
 							<video id="jeohome" width="300" height="700" autoplay  muted defaultMuted playsinline poster="./images/postervideo.png" loop="3">
 							  <source src="images/JoeBuckMusic.mov" type="video/mp4">
 							  Your browser does not support the video tag.
 							</video>
+							
 						</div>
 					</div>
 				</div>
@@ -201,3 +206,19 @@
 	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="js/custom.js?ver=1"></script>
+
+	<script> 
+	var ppbutton = document.getElementById("vidbutton");
+	ppbutton.addEventListener("click", playPause);
+	myVideo = document.getElementById("jeohome");
+	function playPause() { 
+	    if (myVideo.paused) {
+	        myVideo.play();
+	        ppbutton.innerHTML = "Pause";
+	        }
+	    else  {
+	        myVideo.pause(); 
+	        ppbutton.innerHTML = "Play";
+	        }
+	} 
+	</script> 
