@@ -15,8 +15,8 @@ if (fanForm) {
       }
   });
   fanForm.addEventListener("submit", (e) => {
-    
     e.preventDefault();
+     $('.spiner').css('display','block');
     const formData = new FormData(fanForm);
     formData.append("type", "fan");
     fetch(scriptURL, { method: "POST", body: formData })
@@ -62,6 +62,7 @@ if (talentForm) {
 
   talentForm.addEventListener("submit", (e) => {
     e.preventDefault();
+    $('.spiner').css('display','block');
     const formData = new FormData(talentForm);
     formData.append("type", "talent");
     fetch(scriptURL, { method: "POST", body: formData })
